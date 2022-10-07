@@ -13,7 +13,7 @@ import BoxElement from "./Core/MBox";
 
 const Main = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
             <Navbar />
             <BoxElement />
             <Routes>
