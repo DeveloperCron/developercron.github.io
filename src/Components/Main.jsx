@@ -18,7 +18,7 @@ const Main = () => {
             <BoxElement />
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="work" element={<Work />} />
+                <Route exact path="/work" element={<Work />} />
             </Routes>
             <Footer />
         </BrowserRouter>
