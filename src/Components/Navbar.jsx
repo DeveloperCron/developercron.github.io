@@ -27,7 +27,7 @@ const Navbar = () => {
                 <Link to="/" style={{ textDecoration: 'none' }}>
                     <ButtonElement Title="Home" />
                 </Link>
-                <Link to="/work" style={{ textDecoration: 'none' }}>
+                <Link to="work" style={{ textDecoration: 'none' }}>
                     <ButtonElement Title="Works" />
                 </Link>
             </Stack>
