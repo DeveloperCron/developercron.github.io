@@ -14,7 +14,7 @@ const Items = [
     Title: "This website",
     Description:
       "This website is open sourced. I’ve made this website using MUI and Reactjs and some more libraries. Feel free to learn from it. However, you have to install the folder packages manually.",
-    Url: "https://www.google.co.il/",
+    Url: "https://github.com/DeveloperCron/portfolio",
     Img: Website,
   },
 

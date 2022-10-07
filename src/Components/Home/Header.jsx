@@ -89,7 +89,7 @@ const Header = () => {
                 marginTop: 2,
             }}>
                 <Link logo={FiGithub} url="https://github.com/DeveloperCron" name="Github" />
-                <Link logo={FiTwitter} url="https://github.com/DeveloperCron" name="Twitter" />
+                <Link logo={FiTwitter} url="https://twitter.com/dev_cronrblx" name="Twitter" />
                 <Link logo={IoLogoDiscord} url="https://discordapp.com/users/735371358120312863" name="Discord" />
                 <Link logo={SiRoblox} url="https://www.roblox.com/users/1736230219/profile" name="Roblox" />
             </Stack>
