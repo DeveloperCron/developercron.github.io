@@ -6,10 +6,7 @@ const BoxElement = () => {
         <Box
             sx={{
                 width: 1 / 1,
-                height: 2,
-                marginBottom: 2,
-                backgroundColor: 'secondary.main',
-
+                height: 100,
             }}
         />
     );
