@@ -7,9 +7,9 @@ import {
 
 import Home from "./Home/Home";
 import Work from "./Work/Work";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import BoxElement from "./Core/MBox";
+import Navbar from "./Navbar";
 
 const Main = () => {
     return (

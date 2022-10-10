@@ -16,9 +16,7 @@ const CardElement = styled(Card)(({ theme }) => ({
 const LinkCard = props => {
     return (
         <CardElement variant='none'>
-            <CardActionArea onClick={(() => {
-                console.log("Clicked")
-            })}>
+            <CardActionArea>
                 <CardMedia
                     component="img"
                     height="140"
