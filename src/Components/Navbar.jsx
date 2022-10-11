@@ -58,6 +58,7 @@ const Navbar = () => {
             }}>
             <Container maxWidth={"md"} sx={{
                 display: "flex",
+                justifyContent: "space-between"
             }}>
                 <Typography
                     variant="h5"
@@ -78,17 +79,20 @@ const Navbar = () => {
                         </Link>
                     </Stack>
                 </Box>
-                <IconButton edge="end"
-                    sx={{
-                        display: {
-                            xs: 'flex',
-                            md: 'none'
-                        }
-                    }}
-                    onClick={handleMobileMenuOpen}
-                >
+                <IconButton edge="end" onClick={handleMobileMenuOpen} sx={{
+                    display: {
+                        xs: 'flex',
+                        md: 'none'
+                    },
+                    borderWidth: 1,
+                    borderStyle: "solid",
+                    borderColor: `#fff`,
+                    borderRadius: 2,
+                    height: 1 / 2,
+                    m: 1,
+                }}>
                     <BiMenu
-                        size={30}
+                        size={24}
                         aria-controls={mobileMenuId}
                         color="#fff"
                     >
