@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 
 const Main = () => {
     return (
-        <BrowserRouter basename="/portfolio">
+        <BrowserRouter basename="/">
             <Navbar />
             <BoxElement />
             <Routes>
