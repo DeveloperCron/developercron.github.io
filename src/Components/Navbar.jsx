@@ -7,6 +7,17 @@ import { Stack, Container } from '@mui/system';
 import { MenuItem, Box, Menu, IconButton } from '@mui/material';
 import { BiMenu } from "react-icons/bi";
 
+const List = [
+    {
+        url: "/",
+        text: "Home"
+    },
+    {
+        url: "/work",
+        text: "Works"
+    }
+]
+
 const Navbar = () => {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -36,16 +47,15 @@ const Navbar = () => {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
-            <MenuItem>
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                    Home
-                </Link>
-            </MenuItem>
-            <MenuItem>
-                <Link to="/work" style={{ textDecoration: 'none' }}>
-                    Works
-                </Link>
-            </MenuItem>
+            {List.map((item, index) => {
+                return (
+                    <MenuItem onClick={handleMobileMenuClose} key={index}>
+                        <Link to={item.url} style={{ textDecoration: 'none' }}>
+                            {item.text}
+                        </Link>
+                    </MenuItem>
+                )
+            })}
         </Menu>
     );
 
@@ -71,12 +81,13 @@ const Navbar = () => {
                 </Typography>
                 <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                     <Stack spacing={1} direction="row" sx={{ padding: 1 }}>
-                        <Link to="/" style={{ textDecoration: 'none' }}>
-                            <ButtonElement Title="Home" />
-                        </Link>
-                        <Link to="/work" style={{ textDecoration: 'none' }}>
-                            <ButtonElement Title="Works" />
-                        </Link>
+                        {List.map((item, index) => {
+                            return (
+                                <Link to={item.url} key={index} style={{ textDecoration: 'none' }}>
+                                    <ButtonElement Title={item.text} />
+                                </Link>
+                            )
+                        })}
                     </Stack>
                 </Box>
                 <IconButton edge="end" onClick={handleMobileMenuOpen} sx={{
