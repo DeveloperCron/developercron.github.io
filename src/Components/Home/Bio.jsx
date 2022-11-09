@@ -40,6 +40,10 @@ const Bio = () => {
                     <Text>2021 - 2022</Text>
                     <Text>In 2021 I've started doing commissions. Something very weird to me do to. During commissions I learnt how hard is that to lead a team (don't do my mistake)</Text>
                 </Stack>
+                <Stack direction="row" spacing={2}>
+                    <Text>2022 - Present</Text>
+                    <Text>CTO at Y-Tech</Text>
+                </Stack>
             </Stack>
         </Container>
     )

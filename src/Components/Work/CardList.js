@@ -6,7 +6,7 @@ const Items = [
   {
     Title: "Pieza",
     Description:
-      "Pieza is a pizzeria game within the Roblox platform. I’ve programmed the backend and the frontend. From doing handlers to making animations. Currently the game is being maintained. ",
+      "Pieza is a pizzeria game within the Roblox platform. I’ve programmed the backend and the frontend. From doing handlers to making animations.",
     Url: "https://www.roblox.com/groups/5910421/Pieza#!/about",
     Img: Pieza,
   },
@@ -20,8 +20,7 @@ const Items = [
 
   {
     Title: "Parkey",
-    Description:
-      "Parkey is a project I do In real life. I would not be expanding on it though. But I’m the vice president of development. Everything goes through me. ",
+    Description: "Parkey is a project I'm doing in real life. Currently CTO",
     Img: Parkey,
   },
 ];
