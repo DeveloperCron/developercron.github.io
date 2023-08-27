@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include your CSS and other dependencies here -->
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script></head
+  >
+  <body class="w-screen h-screen bg-zinc-950 flex flex-col items-center">
+    <Header />
+    <br />
+    <main class="w-full lg:w-1/2 max-h-max flex mt-14 p-5">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
