@@ -8,18 +8,16 @@ import { cardsData } from "../constants/cardsData";
     <p class="text-white font-bold text-2xl">Projects</p>
     <p class="text-gray-500">Some projects are my and some from work</p>
     <div class="container w-full h-auto items-center justify-center flex">
-      <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
+      <div class="grid grid-cols-1 gap-4 mt-8 md:mt-16 md:grid-cols-2">
         {
           cardsData.map((item) => (
-            <a
-              href="#"
-              class="block max-w-sm p-6 rounded-lg shadow bg-zinc-900 border-gray-700 hover:bg-gray-700 transition-all">
+            <div class="block max-w-sm p-6 rounded-lg shadow bg-zinc-900 border-gray-700 hover:bg-gray-700 transition-all">
               <p class="text-white font-bold text-xs mb-1">{item.date}</p>
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
                 {item.title}
               </h5>
               <p class="font-normal text-gray-400">{item.description}</p>
-            </a>
+            </div>
           ))
         }
       </div>
