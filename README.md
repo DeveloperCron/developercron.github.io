@@ -1,2 +1,1 @@
-# React + TypeScript + Vite
-
+Just my homepage 
