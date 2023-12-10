@@ -19,6 +19,12 @@ const projectCards: ReadonlyArray<ProjectCardProperties> = [
 		description:
 			"Basic electron application for presentations! With a sleek and modern design, this intro screen is perfect for grabbing your audience's attention from the start.",
 	},
+	{
+		title: "ShoppingList",
+		date: "2023",
+		description:
+			"ShoppingList is an android application powered up by Material UI 3 and Icons8, as of December 2023 it's still unavailable",
+	},
 ]
 
 export { projectCards }
